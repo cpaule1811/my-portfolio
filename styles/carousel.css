@@ -1,0 +1,14 @@
+.swiper-button-next, .swiper-button-prev {
+  color: var(--dark-yellow);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--dark-yellow);
+}
+
+@media (hover: none), (max-width: 500px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}

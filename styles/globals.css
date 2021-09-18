@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+@font-face {
+  font-family: "Vegan";
+  src: url("./fonts/Vegan.ttf");
+  font-display: swap;
+}
+
+:root {
+  --dark-red: #be2f29;
+  --dark-blue: #1a2c42;
+  --dark-yellow: #ecaf44;
+  --light-grey: #8e8d8a;
+  --black: #1f1f1f;
+  --grey: #383636;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.background-blue {
+  position: fixed;
+  background: linear-gradient(45deg, var(--dark-blue) 25%, rgba(255, 255, 255, 0) 25%);
+  height: 100vh;
+  width: 100vw;
+  z-index: -120;
+}
+
+.main {
+  height: 100vh;
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.blurb {
+  font-size: 22px;
+  font-family: "Work Sans", sans-serif;
+  width: 420px;
+  text-align: left;
+  padding: 10px;
+}
+
+.blurb span:first-child {
+  color: var(--dark-yellow);
+  font-weight: bold;
+}
+
+.heading {
+  font-size: 60px;
+  font-family: vegan;
+}
+
+.heading button {
+  float: right;
+  margin-top: 30px;
+}
+
+.yellow-background {
+  z-index: -120;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-135deg, var(--dark-yellow) 25%, rgba(255, 255, 255, 0) 25%);
+}
+
+.red {
+  color: var(--dark-red);
+  font-weight: bold;
+}
+.carousel {
+  width: 500px;
+}
+
+@media (max-width: 550px) {
+  .blurb {
+    font-size: 20px;
+    width: 100%;
+  }
+  .heading {
+    font-size: 36px;
+  }
+  .sidebar-margin {
+    margin-right: 50px;
+  }
+  .carousel {
+    width: 100%;
+    margin-right: 50px;
+  }
+}

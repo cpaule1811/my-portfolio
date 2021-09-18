@@ -1,0 +1,31 @@
+.skill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  gap: 20px 10px;
+  font-size: 45px;
+}
+
+.skills-title {
+  font-size: 28px;
+  margin-bottom: 35px;
+  font-family: "Work Sans", sans-serif;
+  transform: translateX(-50px);
+}
+
+@media (max-width: 580px) {
+    .skill-wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 10px 60px 10px 10px;
+      }
+}
+
+@media (max-width: 3500px) {
+    .skills-title { 
+        transform: translateX(0);
+        padding-right: 50px;
+        margin-bottom: 20px
+    }
+}
