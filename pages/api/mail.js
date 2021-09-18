@@ -1,8 +1,8 @@
 import nodemailer from "nodemailer";
 
 export default function handler(req, res) {
-  const { name, email, subject, message, mobile } = req.body;
-
+  const { name, email, subject, message, mobile } = JSON.parse(req.body);
+  console.log()
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
@@ -30,8 +30,7 @@ export default function handler(req, res) {
   transporter.sendMail(mail, (err, info) => {
     if (err) {
       res.json({success: false, statusMessage: "Message failed"});
-    } else {
-      res.json({success: true, statusMessage: "Message successfully sent!"});
-    }
-  });
+    } 
+  }); 
+  res.json({success: true, statusMessage: "Message successfully sent!"});
 }
