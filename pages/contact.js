@@ -32,7 +32,6 @@ export default function Contact() {
 
   return (
     <div className="form-container">
-    {name}
       <div className="form-heading">Get In Touch</div>
       <form onSubmit={(e) => submitEmail(e)} className="form n-center">
         <div className="form-first-row">
