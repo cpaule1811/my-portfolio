@@ -1,29 +1,29 @@
 import Card from "../components/card";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectFlip, EffectCube } from "swiper";
+import { Navigation, Pagination, EffectCube } from "swiper";
 import { projectData } from "../utils/projects-data";
 
 export default function Projects() {
   return (
     <div className="carousel">
       <Swiper
-        modules={[Navigation, Pagination, EffectFlip, EffectCube]}
+        modules={[Navigation, Pagination, EffectCube]}
         effect="cube"
         spaceBetween={0}
         slidesPerView={1}
-        navigation={{ loop: true }}
-        pagination={{ clickable: true, loop: true }}
-        loop={true}
+        navigation
+        pagination={{ clickable: true }}
         cubeEffect={{
           shadow: false,
           shadowOffset: -5,
           shadowScale: 1,
           slideShadows: false,
         }}
+        loop={true} 
       >
-        {projectData.map((item) => {
+        {projectData.map((item, i) => {
           return (
-            <SwiperSlide key={item.title}>
+            <SwiperSlide key={i}>
               <Card {...item} />
             </SwiperSlide>
           );

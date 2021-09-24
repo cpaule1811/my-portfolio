@@ -5,6 +5,7 @@ import vercel from "../img/vercel-icon-dark.svg";
 import DOIco from "../img/digitalocean.svg";
 import trailerHubBg from "../img/Trailer-Hub.png";
 import edhBuilderBg from "../img/Edh-Builder.PNG";
+import greenstandBg from "../img/greenstand-logo.png";
 import reduxIco from "../img/redux.svg";
 import nodeIco from "../img/nodejs-icon.svg";
 import postgresBlue from "../img/postgresql-blue.svg";
@@ -52,6 +53,28 @@ export const projectData = [
     links: {
       github: "https://github.com/cpaule1811/EDH-BUILDER",
       live: "https://edhbuilder.com.au",
+    },
+  },
+  {
+    title: "Treetracker App",
+    tools: [
+      {
+        key: 10,
+        name: "next",
+        ico: next,
+      },
+      {
+        key: 11,
+        name: "react",
+        ico: reactIco,
+      },
+    ],
+    description:
+      "Transitioned project to Next.js. Also contributed some components, bug fixes and cypress tests.",
+    contribution: "Contributer",
+    background: greenstandBg,
+    links: {
+      github: "https://github.com/Greenstand/treetracker-web-map-client",
     },
   },
   {

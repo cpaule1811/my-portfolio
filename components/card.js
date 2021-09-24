@@ -52,6 +52,7 @@ export default function Card({
                 </button>
               </a>
             </Link>
+            {links.live && 
             <Link href={links.live}>
               <a target="_blank" rel="noreferrer">
                 <button>
@@ -59,6 +60,7 @@ export default function Card({
                 </button>
               </a>
             </Link>
+            }
           </div>
         </div>
       </div>
