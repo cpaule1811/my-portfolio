@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     };
     const sent = await sgMail.send(msg);
     res.json(sent);
-  } catch {
+  } catch(e) {
     res.json(e);
   }
 }
