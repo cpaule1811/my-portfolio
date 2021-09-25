@@ -7,7 +7,7 @@ export default async function handler(req, res) {
     const text = `${message} \nmobile: ${mobile} \nemail: ${email}`;
     const msg = {
       to: process.env.EMAIL_TO,
-      from: `"${name}" <${process.env.GOOGLE_EMAIL}>`,
+      from: `"${name}" <${process.env.EMAIL_FROM}>`,
       subject,
       text,
     };
