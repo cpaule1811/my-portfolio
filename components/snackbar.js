@@ -18,6 +18,6 @@ export default function Snackbar({ message, success, setStatus }) {
   }, [message]);
 
   return (
-    <div className={(isActive ? "snackbar show " : "snackbar ") + (success ? "green" : "red")}>{message}</div>
+    <div className={(isActive ? "snackbar show " : "snackbar ") + (success ? "green" : "fail-red")}>{message}</div>
   );
 }
