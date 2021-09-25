@@ -14,6 +14,7 @@ export default async function handler(req, res) {
     const sent = await sgMail.send(msg);
     res.json(sent);
   } catch(e) {
+    console.log(e)
     res.json(e);
   }
 }
