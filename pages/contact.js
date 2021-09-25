@@ -1,6 +1,7 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Snackbar from "../components/snackbar";
 import { useState } from "react";
 
 export default function Contact() {
@@ -9,7 +10,7 @@ export default function Contact() {
   const [mobile, setMobile] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [status, setStatus] = useState({ success: false, statusMessage: "" });
+  const [status, setStatus] = useState({ success: true, statusMessage: "" });
 
   const submitEmail = async (e) => {
     e.preventDefault();
@@ -28,7 +29,18 @@ export default function Contact() {
     });
     const status = await resp.json();
     setStatus(status);
+    if (status.success) clearForm();
   };
+
+  const clearForm = () => {
+    setEmail("");
+    setName("");
+    setMobile("");
+    setSubject("");
+    setMessage("");
+  };
+
+  const { success, statusMessage } = status;
 
   return (
     <div className="form-container">
@@ -59,6 +71,7 @@ export default function Contact() {
               onChange={(e) => setMobile(e.target.value)}
               type="text"
               id="number"
+              value={mobile}
               className="form-control"
               required
             />
@@ -145,6 +158,11 @@ export default function Contact() {
           </a>
         </Link>
       </div>
+      <Snackbar
+        message={statusMessage}
+        success={success}
+        setStatus={setStatus}
+      />
     </div>
   );
 }

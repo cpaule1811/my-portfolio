@@ -3,6 +3,7 @@ import "../styles/sidebar.css";
 import "../styles/card.css";
 import "../styles/contact.css";
 import "../styles/skills.css";
+import "../styles/snackbar.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
