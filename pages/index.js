@@ -18,7 +18,7 @@ export default function Home() {
               Hi there, I am a <span>Web Developer </span>
               based in Sydney. I love making Web applciations using{" "}
               <span className="red">React</span> and{" "}
-              <span className="red">NextJs</span>. Check out some of my
+              <span className="red">Next.js</span>. Check out some of my
               projects:
             </div>
             <Link href="/projects" passHref>

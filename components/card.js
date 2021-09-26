@@ -52,15 +52,15 @@ export default function Card({
                 </button>
               </a>
             </Link>
-            {links.live && 
-            <Link href={links.live}>
-              <a target="_blank" rel="noreferrer">
-                <button>
-                  <FontAwesomeIcon icon={faPlay} color="#BE2F29" /> Demo
-                </button>
-              </a>
-            </Link>
-            }
+            {links.live && (
+              <Link href={links.live}>
+                <a target="_blank" rel="noreferrer">
+                  <button>
+                    <FontAwesomeIcon icon={faPlay} color="#BE2F29" /> Live
+                  </button>
+                </a>
+              </Link>
+            )}
           </div>
         </div>
       </div>

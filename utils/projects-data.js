@@ -47,7 +47,7 @@ export const projectData = [
       },
     ],
     description:
-      "Deck building website for Magic the Gathering trading card game. built using React/Redux.",
+      "Full stack web application for building Magic the Gathering trading card game decks",
     contribution: "Developer",
     background: edhBuilderBg,
     links: {
@@ -70,7 +70,7 @@ export const projectData = [
       },
     ],
     description:
-      "Transitioned project to Next.js. Also contributed some components, bug fixes and cypress tests.",
+      "Transitioned application to Next.js. Also contributed some components, bug fixes and cypress tests.",
     contribution: "Contributer",
     background: greenstandBg,
     links: {
@@ -102,7 +102,7 @@ export const projectData = [
       },
     ],
     description:
-      "A simple website using Next and React that helps you find all your favorite movie trailers.",
+      "A server side rendered application using Next.js and React that helps you find all your favorite movie trailers.",
     contribution: "Developer",
     background: trailerHubBg,
     links: {

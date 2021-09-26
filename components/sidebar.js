@@ -10,7 +10,7 @@ import {
   faBriefcase,
   faIdCard,
   faStar,
-  faEnvelope,
+  faFileDownload,
   faMinusSquare,
   faCaretSquareLeft,
 } from "@fortawesome/free-solid-svg-icons";
@@ -119,16 +119,19 @@ function Sidebar() {
               />
             </a>
           </Link>
-          <Link href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBlKZNfHTCqshWZJcMHhdWmMqJrLkXqqxLgZkZkkRPVmkwMsGvxwwZzTtCfCkttPRmBvrQ">
-            <a rel="noreferrer" target="_blank">
-              <FontAwesomeIcon
-                className="icon-social"
-                size="2x"
-                icon={faEnvelope}
-                color="var(--dark-red)"
-              />
-            </a>
-          </Link>
+          <a
+            href="Charlie_Edwards_Resume.pdf"
+            rel="noreferrer"
+            title="Download Resume"
+            download
+          >
+            <FontAwesomeIcon
+              className="icon-social"
+              size="2x"
+              icon={faFileDownload}
+              color="var(--dark-red)"
+            />
+          </a>
         </div>
       )}
     </div>
