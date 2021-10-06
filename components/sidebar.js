@@ -65,36 +65,36 @@ function Sidebar() {
       )}
       <div className={`nav ${minimized && "nav-mini"}`}>
         <Link href="/" passHref>
-          <div className="tab">
+          <a className="tab">
             <FontAwesomeIcon icon={faHome} size="lg" color="var(--dark-red)" />
             {!minimized && <span>HOME</span>}
-          </div>
+          </a>
         </Link>
         <Link href="/projects" passHref>
-          <div className="tab">
+          <a className="tab">
             <FontAwesomeIcon
               size="lg"
               icon={faBriefcase}
               color="var(--dark-red)"
             />
             {!minimized && <span>PROJECTS</span>}
-          </div>
+          </a>
         </Link>
         <Link href="/skills" passHref>
-          <div className="tab">
+          <a className="tab">
             <FontAwesomeIcon size="lg" icon={faStar} color="var(--dark-red)" />
             {!minimized && <span>SKILLS</span>}
-          </div>
+          </a>
         </Link>
         <Link href="/contact" passHref>
-          <div className="tab">
+          <a className="tab">
             <FontAwesomeIcon
               size="lg"
               icon={faIdCard}
               color="var(--dark-red)"
             />
             {!minimized && <span>CONTACT</span>}
-          </div>
+          </a>
         </Link>
       </div>
       {!minimized && (

@@ -22,9 +22,11 @@ export default function Home() {
               projects:
             </div>
             <Link href="/projects" passHref>
-              <button className="contact-send-button button-pos">
-                View <br /> Projects
-              </button>
+              <a>
+                <button className="contact-send-button button-pos">
+                  View <br /> Projects
+                </button>
+              </a>
             </Link>
           </div>
         </div>
