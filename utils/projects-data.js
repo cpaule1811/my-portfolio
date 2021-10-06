@@ -47,7 +47,7 @@ export const projectData = [
       },
     ],
     description:
-      "Full stack web application for building Magic the Gathering trading card game decks",
+      "Full stack web application for building trading card game decks.",
     contribution: "Developer",
     background: edhBuilderBg,
     links: {
