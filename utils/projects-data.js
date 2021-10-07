@@ -3,7 +3,7 @@ import reactIco from "../img/react-2.svg";
 import postgres from "../img/postgresql-blue.svg";
 import vercel from "../img/vercel-icon-dark.svg";
 import DOIco from "../img/digitalocean.svg";
-import trailerHubBg from "../img/Trailer-Hub.png";
+import trailerStackBg from "../img/Trailer-Hub.png";
 import edhBuilderBg from "../img/Edh-Builder.PNG";
 import greenstandBg from "../img/greenstand-logo.png";
 import reduxIco from "../img/redux.svg";
@@ -78,7 +78,7 @@ export const projectData = [
     },
   },
   {
-    title: "Trailer Hub",
+    title: "Trailer Stack",
     tools: [
       {
         key: 6,
@@ -104,10 +104,10 @@ export const projectData = [
     description:
       "A server side rendered application using Next.js and React that helps you find all your favorite movie trailers.",
     contribution: "Developer",
-    background: trailerHubBg,
+    background: trailerStackBg,
     links: {
-      github: "https://github.com/cpaule1811/trailer-hub",
-      live: "https://trailer-hub.vercel.app",
+      github: "https://github.com/cpaule1811/trailer-stack",
+      live: "https://trailer-stack.vercel.app",
     },
   },
 ];
