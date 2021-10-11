@@ -1,16 +1,8 @@
-import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>Charlie Edwards</title>
-        <meta name="description" content="Portfolio for Charlie Edward's web development projects" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main>
         <div className="main sidebar-margin">
           <div className="heading">
             Charlie Edwards
@@ -30,7 +22,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </main>
     </div>
   );
 }

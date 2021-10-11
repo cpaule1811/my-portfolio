@@ -14,10 +14,16 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Layout from "../components/layout";
 config.autoAddCss = false;
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+     <Head>
+        <title>Charlie Edwards</title>
+        <meta name="description" content="Portfolio for Charlie Edward's web development projects" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Component {...pageProps} />
     </Layout>
   );
